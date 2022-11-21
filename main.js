@@ -12,3 +12,12 @@ updateList();
 window.addEventListener('scroll', () => {
     updateList();
 })
+
+//Making the Toggle work
+
+const menuBar = document.getElementById('menubar');
+const iconsList = document.getElementById('menuIcons');
+
+menuBar.addEventListener('click', () => {
+	iconsList.classList.toggle('active');
+});
